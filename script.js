@@ -11,13 +11,13 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function quantcarateres(textarea) {
+function updateCharacterCount(textarea) {
   const maxLength = textarea.getAttribute('maxlength');
   const counter = document.getElementById('counter');
   counter.textContent = maxLength - textarea.value.length;
 }
 
-function buttun(checkbox) {
+function toggleSubmitButton(checkbox) {
   const submitButton = document.getElementById('submit-btn');
   submitButton.disabled = !checkbox.checked;
 }
@@ -39,7 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
       textarea.value = textarea.value.slice(0, maxLength);
       counter.textContent = '0';
     }
-    quantcarateres(textarea);
   });
-  
 });
