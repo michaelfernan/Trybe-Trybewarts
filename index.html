@@ -43,7 +43,7 @@
                         <option id="pytherina-house" value="Pytherina">Pytherina</option>
                     </select>
                 </section>
-                <section class="famy">
+                <section class="formulario">
                     <label id="label-content" for="content">Qual conteúdo você está com mais vontade de
                         aprender?</label>
                     <input type="checkbox" class="subject" value="HoFs">
@@ -61,7 +61,26 @@
                 </section>
 
                 <label id="label-rate" for="rate">Como você avalia a Trybewarts?
-                   
+                    <input type="radio" id="rate1" name="rate" value="1">
+                    <label for="rate1">1</label>
+                    <input type="radio" id="rate2" name="rate" value="2">
+                    <label for="rate2">2</label>
+                    <input type="radio" id="rate3" name="rate" value="3">
+                    <label for="rate3">3</label>
+                    <input type="radio" id="rate4" name="rate" value="4">
+                    <label for="rate4">4</label>
+                    <input type="radio" id="rate5" name="rate" value="5">
+                    <label for="rate5">5</label>
+                    <input type="radio" id="rate6" name="rate" value="6">
+                    <label for="rate6">6</label>
+                    <input type="radio" id="rate7" name="rate" value="7">
+                    <label for="rate7">7</label>
+                    <input type="radio" id="rate8" name="rate" value="8">
+                    <label for="rate8">8</label>
+                    <input type="radio" id="rate9" name="rate" value="9">
+                    <label for="rate9">9</label>
+                    <input type="radio" id="rate10" name="rate" value="10">
+                    <label for="rate10">10</label>
                 </label>
                 <label class="textarea" for="comment">Deixe seu comentário:</label>
                 <textarea id="comment" name="comment" maxlength="500" oninput="updateCharacterCount(this)"></textarea>
@@ -71,7 +90,9 @@
                         type="checkbox" id="agreement" onchange="toggleSubmitButton(this)"></label>
                 <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
-        
+            <div id="success-message" style="display: none;">
+                <h2>Informações enviadas com sucesso!</h2>
+            </div>
         </div>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Logo">
     </main>
