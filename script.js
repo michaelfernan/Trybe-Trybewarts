@@ -11,17 +11,6 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function caracterqtd(textarea) {
-  const maxLength = textarea.getAttribute('maxlength');
-  const counter = document.getElementById('counter');
-  counter.textContent = maxLength - textarea.value.length;
-}
-
-function submitBut(checkbox) {
-  const submitButtonElement = document.getElementById('submit-btn');
-  submitButtonElement.disabled = !checkbox.checked;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const maxLength = 500;
   const counter = document.getElementById('counter');
