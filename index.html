@@ -21,14 +21,58 @@
     </header>
 
     <main class="main-container">
+        <div class="formulario">
+            <form id="evaluation-form">
+                <label id="label-family" for="family">Qual sua família?</label>
+                <input type="radio" id="frontend" name="family" value="Frontend">
+                <label for="frontend">Frontend</label>
+                <input type="radio" id="backend" name="family" value="Backend">
+                <label for="backend">Backend</label>
+                <input type="radio" id="fullstack" name="family" value="FullStack">
+                <label for="fullstack">FullStack</label>
+                <section class="name-container">
+                    <input type="text" id="input-name" placeholder="Nome">
+                    <input type="text" id="input-lastname" placeholder="Sobrenome">
+                </section>
+                <section class="email-house-container">
+                    <input type="email" id="input-email" placeholder="Email">
+                    <select id="house">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </section>
+                <section class="famy">
+                    <label id="label-content" for="content">Qual conteúdo você está com mais vontade de
+                        aprender?</label>
+                    <input type="checkbox" class="subject" value="HoFs">
+                    <label for="Hofs">Hofs</label>
+                    <input type="checkbox" class="subject" value="Jest">
+                    <label for="Jest">Jest</label>
+                    <input type="checkbox" class="subject" value="Promises">
+                    <label for="Promises">Promises</label>
+                    <input type="checkbox" class="subject" value="React">
+                    <label for="React">React</label>
+                    <input type="checkbox" class="subject" value="SQL">
+                    <label for="SQL">SQL</label>
+                    <input type="checkbox" class="subject" value="Python">
+                    <label for="Python">Python</label>
+                </section>
 
-        <form id="evaluation-form">
+                <label id="label-rate" for="rate">Como você avalia a Trybewarts?
+                   
+                </label>
+                <label class="textarea" for="comment">Deixe seu comentário:</label>
+                <textarea id="comment" name="comment" maxlength="500" oninput="updateCharacterCount(this)"></textarea>
+                <span id="counter">500</span>
 
-        </form>
-        <div id="success-message" style="display: none;">
-            <h2>Informações enviadas com sucesso!</h2>
+                <label id="label-infos" for="agreement">Você concorda com o uso das informações acima? <input
+                        type="checkbox" id="agreement" onchange="toggleSubmitButton(this)"></label>
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+            </form>
+        
         </div>
-
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Logo">
     </main>
 
