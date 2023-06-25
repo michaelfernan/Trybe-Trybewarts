@@ -1,8 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
   padding: 10px;
+  height: 30px;
 }
 
 .trybewarts-login {
@@ -13,6 +19,7 @@
 .trybewarts-login button {
   margin-left: 10px;
 }
+
 form#evaluation-form {
   display: flex;
   width: 675px;
@@ -22,7 +29,9 @@ form#evaluation-form {
 .main-container {
   display: flex;
   justify-content: space-between;
+
 }
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -50,6 +59,7 @@ form#evaluation-form {
 #house {
   width: 48%;
 }
+
 .label-family {
   display: block;
   margin-bottom: 10px;
@@ -69,4 +79,25 @@ input[type="radio"] {
 .email-house-container {
   display: flex;
   justify-content: space-between;
+}
+
+.formulario {
+  border: solid black 2px;
+  height: 90%;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+footer {
+  text-align: center;
+}
+
+#label-rate {
+  display: flex;
+}
+
+label {
+  padding: 10px;
 }
