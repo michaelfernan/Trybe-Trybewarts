@@ -9,8 +9,7 @@
   display: flex;
 }
 
-.trybewarts-login input , 
-.trybewarts-login button {
+.trybewarts-login input , .trybewarts-login button {
   margin-left: 10px;
 }
 
@@ -29,8 +28,7 @@ form , #evaluation-form {
   height: 500px;
 }
 
-#input-name , 
-#input-lastname {
+#input-name , #input-lastname {
   width: 48%;
 }
 
@@ -57,7 +55,7 @@ form , #evaluation-form {
   margin-bottom: 10px;
 }
 
-input[ type = 'radio' ] {
+input {
   display: block;
   margin-bottom: 5px;
 }

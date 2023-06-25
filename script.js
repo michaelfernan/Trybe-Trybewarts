@@ -11,14 +11,14 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function caracterqtd(textarea) { // Corrigido o nome da função para characterCount
+function caracterqtd(textarea) { 
   const maxLength = textarea.getAttribute('maxlength');
   const counter = document.getElementById('counter');
   counter.textContent = maxLength - textarea.value.length;
 }
 
 function submitBut(checkbox) {
-  const submitButtonElement = document.getElementById('submit-btn'); // Corrigido o nome da variável para submitButtonElement
+  const submitButtonElement = document.getElementById('submit-btn');
   submitButtonElement.disabled = !checkbox.checked;
 }
 
