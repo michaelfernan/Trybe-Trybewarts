@@ -11,7 +11,7 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function caracterqtd(textarea) { 
+function caracterqtd(textarea) {
   const maxLength = textarea.getAttribute('maxlength');
   const counter = document.getElementById('counter');
   counter.textContent = maxLength - textarea.value.length;
