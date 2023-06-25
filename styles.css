@@ -29,7 +29,6 @@ form#evaluation-form {
   height: 500px;
 }
 
-
 #input-name,
 #input-lastname {
   width: 48%;
@@ -58,7 +57,7 @@ form#evaluation-form {
   margin-bottom: 10px;
 }
 
-input[ type="radio"] {
+input[type="radio"] {
   display: block;
   margin-bottom: 5px;
 }
@@ -67,4 +66,4 @@ input[ type="radio"] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-};
+}

@@ -11,15 +11,15 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function cactercount(textarea) {
+function caracterqtd(textarea) { // Corrigido o nome da função para characterCount
   const maxLength = textarea.getAttribute('maxlength');
   const counter = document.getElementById('counter');
   counter.textContent = maxLength - textarea.value.length;
 }
 
-function submitButton(checkbox) {
-  const submitButton = document.getElementById('submit-btn');
-  submitButton.disabled = !checkbox.checked;
+function submitBut(checkbox) {
+  const submitButtonElement = document.getElementById('submit-btn'); // Corrigido o nome da variável para submitButtonElement
+  submitButtonElement.disabled = !checkbox.checked;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
