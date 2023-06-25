@@ -10,12 +10,26 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+let textarea = document.getElementById('comment');
+let maxLength = textarea.getAttribute('maxlength');
+let counter = document.getElementById('counter');
+const checkbox = document.getElementById('agreement');
+const submitButtonElement = document.getElementById('submit-btn');
 
+function caracterqtd() {
+  counter.textContent = maxLength - textarea.value.length;
+}
+
+function submitBut() {
+  submitButtonElement.disabled = !checkbox.checked;
+}
+
+textarea.addEventListener('input', caracterqtd);
+checkbox.addEventListener('change', submitBut);
 document.addEventListener('DOMContentLoaded', () => {
-  const maxLength = 500;
-  const counter = document.getElementById('counter');
-  const textarea = document.getElementById('comment');
-
+  maxLength = 500;
+  counter = document.getElementById('counter');
+  textarea = document.getElementById('comment');
   counter.textContent = maxLength.toString();
 
   textarea.addEventListener('input', () => {
