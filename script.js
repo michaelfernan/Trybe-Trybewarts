@@ -11,13 +11,13 @@ document.getElementById('login-btn').addEventListener('click', (event) => {
   }
 });
 
-function updateCharacterCount(textarea) {
+function cactercount(textarea) {
   const maxLength = textarea.getAttribute('maxlength');
   const counter = document.getElementById('counter');
   counter.textContent = maxLength - textarea.value.length;
 }
 
-function toggleSubmitButton(checkbox) {
+function submitButton(checkbox) {
   const submitButton = document.getElementById('submit-btn');
   submitButton.disabled = !checkbox.checked;
 }

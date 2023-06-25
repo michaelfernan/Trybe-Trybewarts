@@ -43,9 +43,8 @@
                         <option id="pytherina-house" value="Pytherina">Pytherina</option>
                     </select>
                 </section>
-                
-                    <label id="label-content" for="content">Qual conteúdo você está com mais vontade de
-                        aprender?</label>
+               
+                    <label id="label-content" for="content">Qual conteúdo você está com mais vontade de aprender?</label>
                     <input type="checkbox" class="subject" value="HoFs">
                     <label for="Hofs">Hofs</label>
                     <input type="checkbox" class="subject" value="Jest">
@@ -58,7 +57,7 @@
                     <label for="SQL">SQL</label>
                     <input type="checkbox" class="subject" value="Python">
                     <label for="Python">Python</label>
-            
+              
 
                 <label id="label-rate" for="rate">Como você avalia a Trybewarts?
                     <input type="radio" id="rate1" name="rate" value="1">
@@ -83,11 +82,11 @@
                     <label for="rate10">10</label>
                 </label>
                 <label class="textarea" for="comment">Deixe seu comentário:</label>
-                <textarea id="comment" name="comment" maxlength="500" oninput="updateCharacterCount(this)"></textarea>
+                <textarea id="comment" name="comment" maxlength="500" oninput="cactercount(this)"></textarea>
                 <span id="counter">500</span>
 
                 <label id="label-infos" for="agreement">Você concorda com o uso das informações acima? <input
-                        type="checkbox" id="agreement" onchange="toggleSubmitButton(this)"></label>
+                        type="checkbox" id="agreement" onchange="submitButton(this)"></label>
                 <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
             <div id="success-message" style="display: none;">
